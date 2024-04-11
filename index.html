@@ -12,24 +12,44 @@
     <section >
 
         <div>
-            <button onclick="pedirNome()" class="btn">Aluno</button>
+            <button onclick="mostrar(true)" class="btn">Aluno</button>
         </div>
 
         <div>
-            <button onclick="pedirNome()" class="btn">Professor</button>
+            <button onclick="mostrar(false)" class="btn">Professor</button>
         </div>
 
 
     </section>
 
 
-    <section class="sobre">
+    <section class="sobre" id="sobresA">
 
         <br>
         <div class="row">
-            <div class="sobre-col">
+            <div class="sobre-col" id="sobre-colA">
                 <div>
-                    <button onclick="CriarAluno()" class="btn">Criar aluno</button>
+                    <button onclick="pedirNome(true)" class="btn">Criar aluno</button>
+                </div>
+
+                <div class="nome" id ="nome">
+                    nome:
+                </div>
+    
+            </div>
+      </section>
+
+      <section class="sobre" id="sobresP">
+
+        <br>
+        <div class="row">
+            <div class="sobre-col" id="sobre-colP">
+                <div>
+                    <button onclick="pedirNome(false)" class="btn">Criar Professor</button>
+                </div>
+
+                <div class="nome" id="nome">
+                    nome:
                 </div>
     
             </div>
