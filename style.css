@@ -163,17 +163,30 @@ body{
     outline: none;
 }
 
-.container .inputBox{
+.input-field {
+    width: 100%;
     background-color: #eee;
     border: none;
     margin: 8px 0;
-    padding: 10px 15px;
-    font-size: 13px;
-    border-radius: 8px;
-    width: 100%;
-    outline: none;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
 }
-
+.input-field i {
+    flex: 1;
+    text-align: center;
+    color: #666;
+    font-size: 18px;
+}
+.input-field input {
+    flex: 5;
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 13px;
+    color: #333;
+}
 
 .form-container{
     position: absolute;
