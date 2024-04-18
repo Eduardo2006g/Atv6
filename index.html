@@ -3,109 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Criar aluno/professor</title>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
-    
-    <title>MIAUjuda</title>
 </head>
 <body>
-    <div class="container" id="container">
-        <div class="form-container sign-up">
-            <form>
-                <h1>Crie uma conta</h1>
 
-                <!-- Campo das mídias -->
-                <div class="social-media">
-                    <a href="#" class="social-icon">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                    <a href="" class="social-icon">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="" class="social-icon">
-                        <i class="fab fa-google"></i>
-                    </a>
-                    <a href="" class="social-icon">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </div>
+    <section >
 
-                <span>ou use outras redes sociais para cadastro</span>
-                
-                <!-- Campo do cadastro -->
-                <div class="input-field">
-                    <i class="fas fa-user"></i>
-                    <input type="text" placeholder="Nome">
-                </div>
-
-                <div class="input-field">
-                    <i class="fa-solid fa-envelope"></i>
-                    <input type="email" placeholder="Email">
-                </div>
-
-                <div class="input-field">
-                    <i class="fas fa-lock"></i>
-                    <input type="password" placeholder="Senha">
-                </div>
-                
-                <button2 id="btn2">
-                    <a id="registers">Registre-se</a>
-                </button2>
-
-            </form>
-        </div>
-        <div class="form-container sign-in">
-            <form>
-                <h1>Login</h1>
-                
-                <!-- Campo das mídias -->
-                <div class="social-media">
-                    <a href="#" class="social-icon">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                    <a href="" class="social-icon">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="" class="social-icon">
-                        <i class="fab fa-google"></i>
-                    </a>
-                    <a href="" class="social-icon">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </div>
-                <span>ou use a senha do seu email</span>
-                
-                <!-- Campo dos inputs -->
-                <div class="input-field">
-                    <i class="fas fa-user"></i>
-                    <input type="text" placeholder="Nome">
-                </div>
-                <div class="input-field">
-                    <i class="fas fa-lock"></i>
-                    <input type="password" placeholder="Senha">
-                </div>
-
-                <a href="#" class="password">Esqueceu a Senha?</a>
-                <button id="btn"><a class="jorge" id="logins" href="inicio.html">Login</a></button>
-            </form>
+        <div>
+            <button onclick="mostrar(true)" class="btn">Aluno</button>
         </div>
 
-        <div class="toggle-container">
-            <div class="toggle">
-                <div class="toggle-panel toggle-left">
-                    <h1>Bem vindo de volta!</h1>
-                    <p>Use as informações cadastradas para ter acesso ao site</p>
-                    <button class="hidden" id="login">Tela de Login</button>
+        <div>
+            <button onclick="mostrar(false)" class="btn">Professor</button>
+        </div>
+
+
+    </section>
+
+
+    <section class="sobre" id="sobresA">
+
+        <br>
+        <div class="row">
+            <div class="sobre-col" id="sobre-colA">
+                <div>
+                    <button onclick="pedirNome(true)" class="btn">Criar aluno</button>
                 </div>
-                <div class="toggle-panel toggle-right">
-                    <h1>Bem vindo!</h1>
-                    <p>Registrer suas informações para ter acesso ao site</p>
-                    <button class="hidden" id="register">Cadastrar</button>
+
+                <div class="nome" id ="nome">
+                    nome:
                 </div>
+    
             </div>
-        </div>
-    </div>
+      </section>
 
-    <script src="script.js"></script>
+      <section class="sobre" id="sobresP">
+
+        <br>
+        <div class="row">
+            <div class="sobre-col" id="sobre-colP">
+                <div>
+                    <button onclick="pedirNome(false)" class="btn">Criar Professor</button>
+                </div>
+
+                <div class="nome" id="nome">
+                    nome:
+                </div>
+    
+            </div>
+      </section>
+
+
+
+
+
+    
 </body>
 </html>
