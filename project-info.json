@@ -2,7 +2,7 @@
   "name": "Meu Projeto de Exemplo",
   "team": ["Alice", "Bob", "Carlos"],
   "status": "Dentro do Prazo",
-  "progress": 75,
+  "progress": 54,
   "startDate": "2025-01-01",
   "deadline": "2025-06-01"
 }
