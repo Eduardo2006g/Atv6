@@ -1,17 +1,15 @@
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: API
 metadata:
-  name: my-awesome-service
-  description: Serviço responsável pela autenticação de usuários
+  name: pokeapi
+  description: API pública que fornece informações sobre Pokémon.
   tags:
-    - nodejs
-    - auth
-    - backend
-  annotations:
-    github.com/project-slug: tadeuaugusto/my-awesome-service
-    backstage.io/techdocs-ref: dir:.
+    - rest
+    - public
+    - pokemon
 spec:
-  type: service
-  owner: squad-autenticacao
+  type: openapi
   lifecycle: production
-  system: plataforma
+  owner: equipe-exemplo
+  definition:
+    $text: https://pokeapi.co/docs/v2  # Este é o link da documentação
