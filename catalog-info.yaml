@@ -1,15 +1,14 @@
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
-  name: pokeapi
-  description: API pública que fornece informações sobre Pokémon.
+  name: github-rest-api
+  description: GitHub REST API pública v3
   tags:
     - rest
-    - public
-    - pokemon
+    - github
 spec:
   type: openapi
   lifecycle: production
-  owner: equipe-exemplo
+  owner: github
   definition:
-    $text: https://pokeapi.co/docs/v2  # Este é o link da documentação
+    $text: https://raw.githubusercontent.com/github/rest-api-description/main/descriptions/api.github.com/api.github.com.yaml
